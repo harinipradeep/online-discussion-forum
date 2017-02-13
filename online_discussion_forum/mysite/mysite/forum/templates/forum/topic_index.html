@@ -1,0 +1,9 @@
+{% if topic_list %}
+    <ul>
+    {% for topic in topic_list %}
+        <li><a href="/forum/topic/{{ topic.topic_name }}/">{{ topic.topic_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No topics are available.</p>
+{% endif %}
